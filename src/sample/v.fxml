@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.collections.*?>
+<?import javafx.collections.FXCollections?>
+<?import sample.Row?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+<AnchorPane layoutY="27.0" minHeight="0.0" minWidth="0.0" prefHeight="383.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+   <children>
+    <SplitPane dividerPositions="0.5" prefHeight="380.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: green;">
+                     <children>
+                  <TextArea fx:id="codeArea" prefHeight="573.0" prefWidth="495.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="Monospaced Regular" size="14.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableView" prefHeight="383.0" prefWidth="295.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+
+                            <TableColumn fx:id="tableColumn" minWidth="-Infinity" prefWidth="500.0" text="Output" >
+                            </TableColumn>
+
+
+
+                          </columns>
+
+                        </TableView>
+                     </children></AnchorPane>
+        </items>
+    </SplitPane>
+   </children>
+</AnchorPane>
+      <VBox prefHeight="24.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+      <MenuBar>
+        <menus>
+            <Menu mnemonicParsing="false" text="File">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#save" text="Save file" />
+                        <MenuItem mnemonicParsing="false" onAction="#load" text="Load file" />
+                </items>
+            </Menu>
+                  <Menu mnemonicParsing="false" text="Assemble">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#assemble" text="Assemble" />
+                     </items>
+                  </Menu>
+        </menus>
+      </MenuBar>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

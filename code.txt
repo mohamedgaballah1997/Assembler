@@ -1,0 +1,9 @@
+.234567890123456789
+         START   03A0
+TOP      stx     #10
+         ORG     200
+.htfhzjtxj
+LABEL    LDA     op
+op       byte    x'1234ab'
+op2      byte    c'1234ab'
+         END     top

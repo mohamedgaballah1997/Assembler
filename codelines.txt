@@ -1,0 +1,8 @@
+.234567890123456789
+         START   3A0
+TOP      LDS     #3
+         LDX     #1
+LABEL    LDA     op3
+op       byte    c'1234'
+op2      byte    x'1234'
+         END     e

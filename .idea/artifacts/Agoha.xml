@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Agoha">
+    <output-path>$PROJECT_DIR$/out/artifacts/Agoha</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="Agoha" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Agoha.jar">
+        <element id="module-output" name="Agoha" />
+      </element>
+    </root>
+  </artifact>
+</component>
